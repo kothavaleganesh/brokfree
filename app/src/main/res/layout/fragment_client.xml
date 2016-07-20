@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/name_search">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search By Name"
+            android:id="@+id/tvserach_name"
+            android:textSize="16sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/login_text"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="#8a8a8a"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="1dp">
+
+           <!-- <EditText
+                android:id="@+id/etsearch_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:textColor="@color/login_text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:layout_weight="1"/>-->
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/searchView"
+                android:dropDownWidth="wrap_content"
+                android:dropDownHeight="wrap_content"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:background="@android:color/white"
+                android:layout_weight="1">
+                <requestFocus />
+            </AutoCompleteTextView>
+            <ImageView
+                android:layout_width="45dp"
+                android:id="@+id/ivsearch"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:src="@drawable/magnifier"
+                android:padding="5dp"
+                android:clickable="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+ <!--   <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/name_search"
+        android:id="@+id/meetings"
+        android:layout_marginTop="30dp"
+        android:numColumns="2"
+        android:layout_gravity="center_horizontal|top"
+        android:choiceMode="singleChoice"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:divider="#d1d1d1"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>-->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/name_search">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#d1d1d1"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingBottom="1dp">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/meeting7"
+                    android:name="wohlig.com.brokfree.SingleMeetingFragment"
+                    tools:layout="@layout/layout_single_meeting"
+                    android:layout_weight="1"
+                    />
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/meeting8"
+                    android:clickable="true"
+                    android:name="wohlig.com.brokfree.SingleMeetingFragment"
+                    tools:layout="@layout/layout_single_meeting"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingBottom="1dp">
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/meeting9"
+                    android:name="wohlig.com.brokfree.SingleMeetingFragment"
+                    tools:layout="@layout/layout_single_meeting"
+                    android:layout_weight="1"/>
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/meeting10"
+                    android:name="wohlig.com.brokfree.SingleMeetingFragment"
+                    tools:layout="@layout/layout_single_meeting"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:paddingBottom="1dp">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/meeting11"
+                    android:name="wohlig.com.brokfree.SingleMeetingFragment"
+                    tools:layout="@layout/layout_single_meeting"
+                    android:layout_weight="1"/>
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/meeting12"
+                    android:name="wohlig.com.brokfree.SingleMeetingFragment"
+                    tools:layout="@layout/layout_single_meeting"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

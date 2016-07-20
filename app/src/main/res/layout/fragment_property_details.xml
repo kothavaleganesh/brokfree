@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/ToolBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#252525">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:id="@+id/backArrow"
+                android:src="@drawable/arrow_left5"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+
+                />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Property"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/property_single"
+                        android:src="@color/blacktint"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="7dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/property_name"
+                                android:text="568 E 1st Ave, Ney Jersey"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/property_add"
+                                android:text="London, 93-107 Shaftesbury Ave, W1D 5DY "
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rs. 1.7 CR"
+                                android:id="@+id/property_price"
+                                android:textColor="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Strating From"
+                                android:id="@+id/property_pricetag"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8a8a8a"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:visibility="visible"
+                    android:weightSum="2.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            android:padding="12dp"
+                            android:weightSum="4">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3"
+                                android:src="@drawable/map_marker" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:id="@+id/property_location"
+                                android:gravity="start"
+                                android:text="Andheri, Mumbai"
+                                android:textColor="@color/property_colour" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            android:padding="12dp"
+                            android:weightSum="4">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3"
+                                android:src="@drawable/home" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="3 BHK"
+                                android:id="@+id/property_room"
+                                android:textColor="@color/property_colour" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            android:padding="12dp"
+                            android:weightSum="4">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="3"
+                                android:src="@drawable/expand" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:id="@+id/property_area"
+                                android:text="5624 SQFT"
+                                android:textColor="@color/property_colour" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <CheckBox
+                                android:id="@+id/cbproperty1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="7dp"
+                                android:layout_weight="1"
+                                android:button="@drawable/property_checkbox"
+                                android:padding="6dp"
+                                android:text=" IOD"
+                                android:textDirection="anyRtl" />
+
+
+                            <CheckBox
+                                android:id="@+id/cbproperty2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:button="@drawable/property_checkbox"
+                                android:padding="7dp"
+                                android:text="SS " />
+
+                            <CheckBox
+                                android:id="@+id/cbproperty3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="1dp"
+                                android:layout_weight="1"
+                                android:button="@drawable/property_checkbox"
+                                android:padding="7dp"
+
+                                android:text="OC " />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-70dp"
+                        android:layout_marginTop="-50dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="320dp"
+                            android:layout_height="300dp"
+                            android:id="@+id/property_map"
+                            android:src="@drawable/map"
+                            android:clickable="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:id="@+id/property_desc"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                        android:textColor="@color/login_text"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Posession Rate:"
+                                android:id="@+id/property_prate"
+                                android:textColor="@color/login_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="1.2 CR"
+                                android:id="@+id/propperty_prate1"
+                                android:textColor="@color/login_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Last Update:"
+                                android:id="@+id/property_lastupdate"
+                                android:textColor="@color/login_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Jan 26, 2016"
+                                android:id="@+id/property_lupdate"
+                                android:textColor="@color/login_text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Amenities"
+                        android:id="@+id/property_amenities"
+                        android:textColor="@color/login_text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Cross Ventilation"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Intercome System"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Wordrops"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text="Broadband Connectvity"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Wifi"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Instant Gyser"
+                                android:textColor="@color/login_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cb7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Cross Ventilation1"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Intercome System"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Wordrops"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:singleLine="true"
+                                android:text=" Broadband Connectvity"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Wifi"
+                                android:textColor="@color/login_text" />
+
+                            <CheckBox
+                                android:id="@+id/cb12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:button="@drawable/checkbox_selector"
+                                android:padding="3dp"
+                                android:text=" Instant Gyser"
+                                android:textColor="@color/login_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Bank Approval"
+                        android:textColor="@color/login_text"
+                        android:id="@+id/property_bankA"
+                         />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/bank" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/bank" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/done_property"
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            android:background="@color/button"
+                            android:text="Done"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            android:background="@color/button"
+                            android:text="Unseen"
+                            android:id="@+id/seen_unseen"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

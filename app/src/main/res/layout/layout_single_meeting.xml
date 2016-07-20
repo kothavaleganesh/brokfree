@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/main">
+
+
+    <RelativeLayout
+        android:id="@+id/llPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_state_click"
+        android:padding="15dp"
+        android:clickable="true"
+       >
+
+        <TextView
+            android:id="@+id/meeting_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/meeting"
+            android:layout_marginTop="5dp"
+            android:textAlignment="textStart"
+            android:text="Meeting with Sohan Honakari, Andheri"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TODAY, 11.40 AM"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:textColor="#8e8e8e"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

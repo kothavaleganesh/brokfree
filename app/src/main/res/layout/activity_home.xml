@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/llPhotos"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enquiry"
+                    android:textSize="18sp"
+                    android:id="@+id/tvPhotos"
+                    android:gravity="center"
+                    android:textColor="@color/title"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"/>
+
+                <View
+                    android:id="@+id/viewPhotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/title"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVideos"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="showVideos">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Client"
+                    android:textSize="18sp"
+                    android:id="@+id/tvVideos"
+                    android:gravity="center"
+                    android:textColor="@color/title"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"/>
+
+                <View
+                    android:id="@+id/viewVideos"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="6dp"
+                    android:background="@color/title"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vfGallery"
+            android:layout_below="@+id/linearLayout">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                &lt;!&ndash;<ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lvPhotos"
+                    android:dividerHeight="10dp"
+                    android:scrollbars="none"
+                    android:divider="@color/jppPrimaryColor"
+                    android:padding="10dp"/>&ndash;&gt;
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               &lt;!&ndash; <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lvVideos"
+                    android:dividerHeight="10dp"
+                    android:scrollbars="none"
+                    android:divider="@color/jppPrimaryColor"
+                    android:padding="10dp"/>&ndash;&gt;
+
+            </LinearLayout>
+        </ViewFlipper>
+
+
+    </RelativeLayout>
+-->
+
+
+</LinearLayout>

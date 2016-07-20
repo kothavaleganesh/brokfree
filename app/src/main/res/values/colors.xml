@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252525</color>
+    <color name="title">#f3bc3a</color>
+    <color name="button">#ffae00</color>
+    <color name="line">#d1d1d1</color>
+    <color name="blacktint" >#6e252525</color>
+    <color name="login_text">#515974</color>
+    <color name="meeting">#4f4f4f</color>
+    <color name="property_colour">#252525</color>
+    <drawable name="pressed_gray">#0c000000</drawable>
+    <drawable name="selected_gray">#00000000</drawable>
+
+
+
+
+</resources>

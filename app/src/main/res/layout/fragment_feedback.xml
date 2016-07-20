@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/fb1"
+                android:name="wohlig.com.brokfree.SingleRateFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/layout_single_feedback" />
+
+            <fragment
+                android:id="@+id/fb2"
+                android:name="wohlig.com.brokfree.SingleRateFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/layout_single_feedback" />
+
+            <fragment
+                android:id="@+id/fb3"
+                android:name="wohlig.com.brokfree.SingleRateFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/layout_single_feedback" />
+
+            <fragment
+                android:id="@+id/fb4"
+                android:name="wohlig.com.brokfree.SingleRateFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/layout_single_feedback" />
+
+            <fragment
+                android:id="@+id/fb5"
+                android:name="wohlig.com.brokfree.SingleRateFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/layout_single_feedback" />
+
+
+            <Button
+                android:id="@+id/submit_rating"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/button"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
