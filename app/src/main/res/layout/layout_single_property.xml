@@ -5,61 +5,64 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/llproperty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#8a8a8a"
-        android:orientation="vertical"
         android:layout_margin="10dp"
-        android:padding="1dp"
+        android:background="#8a8a8a"
         android:clickable="true"
-        >
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/property_page"
-            ></LinearLayout>
+        android:orientation="vertical"
+        android:padding="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:background="@drawable/property_page" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@android:color/white"
-            >
+            android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_alignParentLeft="true"
-                android:layout_weight="1">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="568 E 1st Ave, Ney Jersey"
-                android:paddingLeft="5dp"
-                android:paddingTop="5dp"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="London, 93-107 Shaftesbury Ave, W1D 5DY "
-                android:paddingLeft="5dp"
-                android:paddingBottom="5dp"                />
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/property_name_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="568 E 1st Ave, Ney Jersey" />
+
+                <TextView
+                    android:id="@+id/property_add_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="London, 93-107 Shaftesbury Ave, W1D 5DY " />
             </LinearLayout>
-         <!--   <Button
+
+            <Button
                 android:layout_width="100dp"
                 android:layout_height="30dp"
-                android:background="@color/button"
-                android:textAllCaps="false"
-                android:layout_gravity="center_horizontal"
-                android:textColor="@android:color/white"
-                android:text="Seen"
-                android:layout_weight="1"
                 android:layout_alignParentRight="true"
-                />-->
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/button"
+                android:layout_margin="10dp"
+                android:text="Seen"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
         </LinearLayout>
 
-        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

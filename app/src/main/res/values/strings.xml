@@ -6,4 +6,5 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="dialogfragment">Open DialogFragment</string>
     <string name="alertdialogfragment">Open Alert DialogFragment</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

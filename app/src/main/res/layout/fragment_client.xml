@@ -68,20 +68,21 @@
         </LinearLayout>
     </LinearLayout>
 
- <!--   <GridView
+    <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/name_search"
-        android:id="@+id/meetings"
-        android:layout_marginTop="30dp"
-        android:numColumns="2"
+        android:id="@+id/grmeetings"
+         android:numColumns="2"
         android:layout_gravity="center_horizontal|top"
         android:choiceMode="singleChoice"
-        android:verticalSpacing="5dp"
-        android:horizontalSpacing="5dp"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
         android:divider="#d1d1d1"
+        android:background="#d1d1d1"
         android:listSelector="@android:color/transparent"
-        android:scrollbars="none"/>-->
+        android:scrollbars="none"/>
+<!--
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -174,5 +175,6 @@
             </LinearLayout>
 </LinearLayout>
     </ScrollView>
+-->
 
 </RelativeLayout>

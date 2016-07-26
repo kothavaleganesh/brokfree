@@ -12,7 +12,8 @@ import android.view.ViewGroup;
 public class SinglePropertyFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.layout_single_meeting, container, false);
+        View view = inflater.inflate(R.layout.layout_single_property, container, false);
+
         return  view;
     }
 }

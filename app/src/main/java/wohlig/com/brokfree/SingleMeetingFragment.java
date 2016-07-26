@@ -1,6 +1,5 @@
 package wohlig.com.brokfree;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,18 +29,19 @@ public class SingleMeetingFragment extends Fragment {
         time.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "NotoSans-Bold.ttf"));
 
         meeting= (RelativeLayout) view.findViewById(R.id.llPlayer);
-        meeting.setOnClickListener(new View.OnClickListener() {
+     /*   meeting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), UserActivity.class);
+                Intent intent = new Intent(getContext(), UserActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
 
         return view;
 
     }
+
 
 }

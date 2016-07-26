@@ -6,8 +6,7 @@
     <fragment
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="wohlig.com.brokfree.SingleRateFragment"
-        tools:layout="@layout/layout_single_feedback"
+        tools:layout="@layout/fragment_other_requirements"
         android:id="@+id/star"/>
 
 </LinearLayout>
